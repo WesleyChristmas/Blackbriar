@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+    font-family: MuseoSansCyrl;
+    src: url(fonts/Museosanscyrl500.ttf);
+   }
 .home-page {position: relative;}
 .hideelem {background: white;opacity: 1;width: 100%;height: 100%;z-index: 100;position: absolute;}
 .hideelem-show {display: block;}
@@ -51,9 +55,16 @@
 .td-white {text-align: center;background: white;border: 1px solid gray; }
 .td-voilen {text-align: center;background: #b39cd6; }
     /*MY CSS*/
+@font-face {
+    font-family: MuseoSansCyrl;
+    src: url(fonts/Museosanscyrl500.ttf);
+   }
+h1{color:#f5f5f5;}
+span{color:#484848; font-family: 'MuseoSansCyrl'; cursor: default;}
 body{background-color: #f5f5f5;}
-h3{cursor: pointer;}
+h2,h4,h5{cursor: pointer; color: #484848;}
 .nopadding{padding: 0}
+.margin{margin-top: 20px;}
 .inline{display: inline-block;}
 .main-container div{padding: 0!important;}
 .container-fluid{padding: 0;}
@@ -62,14 +73,27 @@ h3{cursor: pointer;}
 .myslider{height: 620px; background-image: url(../img/slider.png); background-size: cover;}
 .move{background-color: #333; color: #fff; text-align: center;}
 .move span{padding: 18px;}
-.myprice{height: 620px; background-image: url(../img/price-bg2.jpg); background-size: cover;}
-.myprice table{cursor: pointer;}
+.myprice,.myfeedback, .mycalendar, .mymap{height: 620px;}
+.myprice table{cursor: pointer; color: #484848;}
 .marker i{padding-right: 10px;}
 .marker p{ display: inline-block;vertical-align: middle;}
 .place_bg {background: url("../img/loft.jpg") no-repeat center center;background-size: cover; }
 .seemore{background-color: #333; color: #fff; text-align: center;}
 .seemore span{padding: 18px;}
+.pricelogo{text-align: center;}
+.optionlogo{text-align: center;}
+.optionlogo i{font-size: 48px; color: #333;}
+.option {text-align: left; margin-top: 20px;}
+/*------*/
+.mycalendar {background:url(../img/where.jpg) no-repeat center center; background-size: cover;}
+.where{margin-top: 500px; text-align: center;}
+/*------*/
+.canvas{height: 100%;}
+.bar{position: absolute; z-index: 999;text-align: center; background:#484848; opacity: 0.6; cursor: pointer;}
+.bar h1{text-align: center;}
+.bar-bot{bottom: 0;}
+.rating h4{padding-right: 25px;}
 
 
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map *
