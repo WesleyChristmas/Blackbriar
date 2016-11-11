@@ -1,0 +1,458 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="css/fontawesome/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.css">
+
+<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js" integrity="sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo=" crossorigin="anonymous"></script>
+
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/angular/angular.min.js"></script>
+<script src="js/angularController/Home.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row header-wrap">
+			<div class="col-md-9 col-xs-9">
+				<div class="col-md-6 col-xs-6 col-md-offset-1 col-xs-offset-1"><img class="mylogo" src="img/logo.png"></div>
+				<div class="col-xs-6 col-md-6 col-md-offset-1 col-xs-offset-1"><p class="logo-title">Любые площадки для вашего мероприятия</p></div>
+			</div>
+				<div class="col-md-3 col-xs-3">
+					<div class="col-md-12 col-xs-12">
+						<div class="main-btn text-left">Как работает сервис?</div>
+						<div class="main-btn text-left">Часто задаваемые вопросы</div>
+						<div class="main-btn text-left">Разместить площадку</div>
+					</div>
+			</div>
+		</div>
+		<div class="row select-filter">
+			<div class="col-md-3 col-xs-3">
+				<select class="form-control"  data-width="100%">
+					<option>Москва</option>
+					<option>Санкт-Петербург</option>
+					<option>Екатеринбург</option>
+				</select>
+				<select class="form-control" >
+				<option>Все округа</option>
+				<option>Центральный</option>
+				<option>Северный</option>
+				<option>Северо-Восточный</option>
+				<option>Восточный</option>
+				<option>Юго-Восточный</option>
+				<option>Южный</option>
+				<option>Юго-Западный</option>
+				<option>Западный</option>
+				<option>Северо-Западный</option>
+				<option>Зеленоградский</option>
+				</select>
+				</div>
+			<div class="col-md-3 col-xs-3">
+				<select class="form-control" >
+					<option>День рождения</option>
+					<option>Вечеринка</option>
+				</select>
+				<select class="form-control" >
+					<option>Любые площадки</option>
+					<option>Лофт</option>
+					<option>Банкет</option>
+					<option>Фуршет</option>
+				</select>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<select class="form-control" >
+					<option>до 50 чел</option>
+					<option>до 30 чел</option>
+					<option>до 20 чел</option>
+				</select>
+				<select class="form-control" >
+					<option>2000 - 4000 р/ч</option>
+					<option>4000 - 6000 р/ч</option>
+					<option>6000 - 10000 р/ч</option>
+					<option>более 10000 р/ч</option>
+				</select>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div class="col-xs-12 col-md-12 select-filter-adv">
+					<div class="col-md-6 col-xs-9 marker">
+						<i class="fa fa-map-marker home-filter-marker"></i><p>На карте</p><br>
+						<i class="fa fa-star fa-3 home-filter-star"></i><p>На карте</p>
+					</div>
+					<div class="col-md-3 col-xs-3 marker"><img width="50" height="50" src="img/padlock-active.png"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 1 LINE -->
+		<div class="row">
+			<div class="col-md-4 col-xs-4 nopadding">
+				<a href="desc.html" class="img-overlay">
+					<div class="block-title-top block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-7 col-sm-8 col-md-6 col-lg-7">
+								<div class="inline"><img class="fire-img" ng-src="img/fire-active.png" src="img/fire-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/food-active.png" src="img/food-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/music-active.png" src="img/music-active.png"></div>
+							</div>
+							<div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 text-center nopadding"><i class="fa fa-star empty-star"></i></div>
+							<div class="col-xs-4 col-sm-3 col-md-4 nopadding"><span class="block-price ng-binding">от 2000 Р</span></div>
+						</div>
+					</div>
+					<img class="img_bg" src="img/loft.jpg">
+					<div class="block-title-bot block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-9"><div class="bot-description ng-binding">Пати-кафе на Черкизовской</div></div>
+							<div class="col-xs-3 text-center ng-binding">до 50 чел</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 col-xs-4 nopadding">
+				<a href="desc.html" class="img-overlay">
+					<div class="block-title-top block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-7 col-sm-8 col-md-6 col-lg-7">
+								<div class="inline"><img class="fire-img" ng-src="img/fire-active.png" src="img/fire-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/food-active.png" src="img/food-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/music-active.png" src="img/music-active.png"></div>
+							</div>
+							<div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 text-center nopadding"><i class="fa fa-star empty-star"></i></div>
+							<div class="col-xs-4 col-sm-3 col-md-4 nopadding"><span class="block-price ng-binding">от 2000 Р</span></div>
+						</div>
+					</div>
+					<img class="img_bg" src="img/loft.jpg">
+					<div class="block-title-bot block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-9"><div class="bot-description ng-binding">Пати-кафе на Черкизовской</div></div>
+							<div class="col-xs-3 text-center ng-binding">до 50 чел</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 col-xs-4 nopadding">
+				<a href="desc.html" class="img-overlay">
+					<div class="block-title-top block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-7 col-sm-8 col-md-6 col-lg-7">
+								<div class="inline"><img class="fire-img" ng-src="img/fire-active.png" src="img/fire-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/food-active.png" src="img/food-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/music-active.png" src="img/music-active.png"></div>
+							</div>
+							<div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 text-center nopadding"><i class="fa fa-star empty-star"></i></div>
+							<div class="col-xs-4 col-sm-3 col-md-4 nopadding"><span class="block-price ng-binding">от 2000 Р</span></div>
+						</div>
+					</div>
+					<img class="img_bg" src="img/loft.jpg">
+					<div class="block-title-bot block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-9"><div class="bot-description ng-binding">Пати-кафе на Черкизовской</div></div>
+							<div class="col-xs-3 text-center ng-binding">до 50 чел</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- 2 LINE -->
+		<div class="row">
+			<div class="col-md-4 col-xs-4 nopadding">
+				<a href="desc.html" class="img-overlay">
+					<div class="block-title-top block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-7 col-sm-8 col-md-6 col-lg-7">
+								<div class="inline"><img class="fire-img" ng-src="img/fire-active.png" src="img/fire-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/food-active.png" src="img/food-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/music-active.png" src="img/music-active.png"></div>
+							</div>
+							<div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 text-center nopadding"><i class="fa fa-star empty-star"></i></div>
+							<div class="col-xs-4 col-sm-3 col-md-4 nopadding"><span class="block-price ng-binding">от 2000 Р</span></div>
+						</div>
+					</div>
+					<img class="img_bg" src="img/loft.jpg">
+					<div class="block-title-bot block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-9"><div class="bot-description ng-binding">Пати-кафе на Черкизовской</div></div>
+							<div class="col-xs-3 text-center ng-binding">до 50 чел</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 col-xs-4 nopadding">
+				<a href="desc.html" class="img-overlay">
+					<div class="block-title-top block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-7 col-sm-8 col-md-6 col-lg-7">
+								<div class="inline"><img class="fire-img" ng-src="img/fire-active.png" src="img/fire-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/food-active.png" src="img/food-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/music-active.png" src="img/music-active.png"></div>
+							</div>
+							<div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 text-center nopadding"><i class="fa fa-star empty-star"></i></div>
+							<div class="col-xs-4 col-sm-3 col-md-4 nopadding"><span class="block-price ng-binding">от 2000 Р</span></div>
+						</div>
+					</div>
+					<img class="img_bg" src="img/loft.jpg">
+					<div class="block-title-bot block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-9"><div class="bot-description ng-binding">Пати-кафе на Черкизовской</div></div>
+							<div class="col-xs-3 text-center ng-binding">до 50 чел</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 col-xs-4 nopadding">
+				<a href="desc.html" class="img-overlay">
+					<div class="block-title-top block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-7 col-sm-8 col-md-6 col-lg-7">
+								<div class="inline"><img class="fire-img" ng-src="img/fire-active.png" src="img/fire-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/food-active.png" src="img/food-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/music-active.png" src="img/music-active.png"></div>
+							</div>
+							<div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 text-center nopadding"><i class="fa fa-star empty-star"></i></div>
+							<div class="col-xs-4 col-sm-3 col-md-4 nopadding"><span class="block-price ng-binding">от 2000 Р</span></div>
+						</div>
+					</div>
+					<img class="img_bg" src="img/loft.jpg">
+					<div class="block-title-bot block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-9"><div class="bot-description ng-binding">Пати-кафе на Черкизовской</div></div>
+							<div class="col-xs-3 text-center ng-binding">до 50 чел</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- 3 LINE -->
+		<div class="row">
+			<div class="col-md-8 nopadding">
+				<a href="desc.html" class="img-overlay">
+					<div class="block-title-top block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-7 col-sm-8 col-md-6 col-lg-7">
+								<div class="inline"><img class="fire-img" ng-src="img/fire-active.png" src="img/fire-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/food-active.png" src="img/food-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/music-active.png" src="img/music-active.png"></div>
+							</div> 
+							<div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 text-center nopadding"><i class="fa fa-star fill-star"></i></div>
+							<div class="col-xs-3 col-sm-2 col-md-4 nopadding"><span class="block-price ng-binding">от 2000 Р</span></div>
+						</div>
+					</div>
+					<img class="img_bg" ng-src="img/loft.jpg" src="img/loft.jpg">
+					<div class="block-title-bot block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-9"><div class="bot-description ng-binding">Пати-кафе на Черкизовской</div></div>
+							<div class="col-xs-3 text-center ng-binding">до 50 чел</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 nopadding">
+				<a href="desc.html" class="img-overlay">
+					<div class="block-title-top block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-7 col-sm-8 col-md-6 col-lg-7">
+								<div class="inline"><img class="fire-img" ng-src="img/fire-active.png" src="img/fire-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/food-active.png" src="img/food-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/music-active.png" src="img/music-active.png"></div>
+							</div> 
+							<div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 text-center nopadding"><i class="fa fa-star fill-star"></i></div>
+							<div class="col-xs-3 col-sm-2 col-md-4 nopadding"><span class="block-price ng-binding">от 2000 Р</span></div>
+						</div>
+					</div>
+					<img class="img_bg" ng-src="img/loft.jpg" src="img/loft.jpg">
+					<div class="block-title-bot block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-9"><div class="bot-description ng-binding">Пати-кафе на Черкизовской</div></div>
+							<div class="col-xs-3 text-center ng-binding">до 50 чел</div>
+						</div>
+					</div>
+				</a>
+				<a href="desc.html" class="img-overlay">
+					<div class="block-title-top block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-7 col-sm-8 col-md-6 col-lg-7">
+								<div class="inline"><img class="fire-img" ng-src="img/fire-active.png" src="img/fire-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/food-active.png" src="img/food-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/music-active.png" src="img/music-active.png"></div>
+							</div> 
+							<div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 text-center nopadding"><i class="fa fa-star fill-star"></i></div>
+							<div class="col-xs-3 col-sm-2 col-md-4 nopadding"><span class="block-price ng-binding">от 2000 Р</span></div>
+						</div>
+					</div>
+					<img class="img_bg" ng-src="img/loft.jpg" src="img/loft.jpg">
+					<div class="block-title-bot block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-9"><div class="bot-description ng-binding">Пати-кафе на Черкизовской</div></div>
+							<div class="col-xs-3 text-center ng-binding">до 50 чел</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- 4 LINE -->
+		<div class="row">
+			<div class="col-md-4 col-xs-4 nopadding">
+				<a href="desc.html" class="img-overlay">
+					<div class="block-title-top block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-7 col-sm-8 col-md-6 col-lg-7">
+								<div class="inline"><img class="fire-img" ng-src="img/fire-active.png" src="img/fire-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/food-active.png" src="img/food-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/music-active.png" src="img/music-active.png"></div>
+							</div>
+							<div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 text-center nopadding"><i class="fa fa-star empty-star"></i></div>
+							<div class="col-xs-4 col-sm-3 col-md-4 nopadding"><span class="block-price ng-binding">от 2000 Р</span></div>
+						</div>
+					</div>
+					<img class="img_bg" src="img/loft.jpg">
+					<div class="block-title-bot block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-9"><div class="bot-description ng-binding">Пати-кафе на Черкизовской</div></div>
+							<div class="col-xs-3 text-center ng-binding">до 50 чел</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 col-xs-4 nopadding">
+				<a href="desc.html" class="img-overlay">
+					<div class="block-title-top block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-7 col-sm-8 col-md-6 col-lg-7">
+								<div class="inline"><img class="fire-img" ng-src="img/fire-active.png" src="img/fire-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/food-active.png" src="img/food-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/music-active.png" src="img/music-active.png"></div>
+							</div>
+							<div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 text-center nopadding"><i class="fa fa-star empty-star"></i></div>
+							<div class="col-xs-4 col-sm-3 col-md-4 nopadding"><span class="block-price ng-binding">от 2000 Р</span></div>
+						</div>
+					</div>
+					<img class="img_bg" src="img/loft.jpg">
+					<div class="block-title-bot block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-9"><div class="bot-description ng-binding">Пати-кафе на Черкизовской</div></div>
+							<div class="col-xs-3 text-center ng-binding">до 50 чел</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 col-xs-4 nopadding">
+				<a href="desc.html" class="img-overlay">
+					<div class="block-title-top block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-7 col-sm-8 col-md-6 col-lg-7">
+								<div class="inline"><img class="fire-img" ng-src="img/fire-active.png" src="img/fire-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/food-active.png" src="img/food-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/music-active.png" src="img/music-active.png"></div>
+							</div>
+							<div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 text-center nopadding"><i class="fa fa-star empty-star"></i></div>
+							<div class="col-xs-4 col-sm-3 col-md-4 nopadding"><span class="block-price ng-binding">от 2000 Р</span></div>
+						</div>
+					</div>
+					<img class="img_bg" src="img/loft.jpg">
+					<div class="block-title-bot block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-9"><div class="bot-description ng-binding">Пати-кафе на Черкизовской</div></div>
+							<div class="col-xs-3 text-center ng-binding">до 50 чел</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- 5 LINE -->
+		<div class="row">
+			<div class="col-md-4 col-xs-4 nopadding">
+				<a href="desc.html" class="img-overlay">
+					<div class="block-title-top block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-7 col-sm-8 col-md-6 col-lg-7">
+								<div class="inline"><img class="fire-img" ng-src="img/fire-active.png" src="img/fire-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/food-active.png" src="img/food-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/music-active.png" src="img/music-active.png"></div>
+							</div>
+							<div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 text-center nopadding"><i class="fa fa-star empty-star"></i></div>
+							<div class="col-xs-4 col-sm-3 col-md-4 nopadding"><span class="block-price ng-binding">от 2000 Р</span></div>
+						</div>
+					</div>
+					<img class="img_bg" src="img/loft.jpg">
+					<div class="block-title-bot block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-9"><div class="bot-description ng-binding">Пати-кафе на Черкизовской</div></div>
+							<div class="col-xs-3 text-center ng-binding">до 50 чел</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 col-xs-4 nopadding">
+				<a href="desc.html" class="img-overlay">
+					<div class="block-title-top block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-7 col-sm-8 col-md-6 col-lg-7">
+								<div class="inline"><img class="fire-img" ng-src="img/fire-active.png" src="img/fire-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/food-active.png" src="img/food-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/music-active.png" src="img/music-active.png"></div>
+							</div>
+							<div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 text-center nopadding"><i class="fa fa-star empty-star"></i></div>
+							<div class="col-xs-4 col-sm-3 col-md-4 nopadding"><span class="block-price ng-binding">от 2000 Р</span></div>
+						</div>
+					</div>
+					<img class="img_bg" src="img/loft.jpg">
+					<div class="block-title-bot block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-9"><div class="bot-description ng-binding">Пати-кафе на Черкизовской</div></div>
+							<div class="col-xs-3 text-center ng-binding">до 50 чел</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 col-xs-4 nopadding">
+				<a href="desc.html" class="img-overlay">
+					<div class="block-title-top block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-7 col-sm-8 col-md-6 col-lg-7">
+								<div class="inline"><img class="fire-img" ng-src="img/fire-active.png" src="img/fire-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/food-active.png" src="img/food-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
+								<div class="inline"><img class="fire-img" ng-src="img/music-active.png" src="img/music-active.png"></div>
+							</div>
+							<div class="col-xs-2 col-sm-1 col-md-2 col-lg-1 text-center nopadding"><i class="fa fa-star empty-star"></i></div>
+							<div class="col-xs-4 col-sm-3 col-md-4 nopadding"><span class="block-price ng-binding">от 2000 Р</span></div>
+						</div>
+					</div>
+					<img class="img_bg" src="img/loft.jpg">
+					<div class="block-title-bot block-title">
+						<div class="row clearedrow">
+							<div class="col-xs-9"><div class="bot-description ng-binding">Пати-кафе на Черкизовской</div></div>
+							<div class="col-xs-3 text-center ng-binding">до 50 чел</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- 6 LINE -->
+		<div class="row seemore">
+				<div class="col-md-1 col-xs-1 col-md-offset-3 col-xs-offset-3"><span class="section-nav-arrow glyphicon glyphicon-triangle-bottom"></span></div>
+				<div class="col-xs-4 col-md-4"><h3>Показать еще</h3></div>
+				<div class="col-md-1 col-xs-1"><span class="section-nav-arrow glyphicon glyphicon-triangle-bottom"></span></div>
+			</div>
+		<div class="row"></div>
+		<div class="row"></div>
+	</div>
+</body>
+
+</html>
