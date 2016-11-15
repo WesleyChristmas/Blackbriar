@@ -55,6 +55,7 @@
 .td-white {text-align: center;background: white;border: 1px solid gray; }
 .td-voilen {text-align: center;background: #b39cd6; }
     /*MY CSS*/
+body{transition: all .3s ease-in-out;}
 h1{color:#f5f5f5;}
 span{color:#484848; font-family: 'MuseoSansCyrl'; cursor: default;}
 body{background-color: #f5f5f5;}
@@ -68,13 +69,14 @@ h2,h4,h5{cursor: pointer; color: #484848;}
 .place_header{padding: 5px; text-align: center;}
 .myslider{background-image: url(../img/slider.png); background-size: cover;    min-height: calc(100vh - 108px);}
 .move{background-color: #333; color: #fff; text-align: center;}
-.top{position: absolute; top:0;}
+/*.top{position: absolute; top:0;}*/
 .bot{position: absolute;bottom: 0;}
 .move span{padding: 18px;}
 .move h3{margin-top: 12px;}
 .myfeedback{min-height: calc(100vh - 108px); position: absolute;bottom: 0}
-.myprice{position: absolute; bottom: 0; padding-bottom: 60px;}
+.myprice{padding-bottom: 60px;}
 .myprice table{cursor: pointer; color: #484848;}
+.myprice td{font-size: 20px;}
 .marker i{padding-right: 10px;}
 .marker p{ display: inline-block;vertical-align: middle;}
 .place_bg {background: url("../img/loft.jpg") no-repeat center center;background-size: cover; }
@@ -89,10 +91,14 @@ h2,h4,h5{cursor: pointer; color: #484848;}
 .where{margin-top: 500px; text-align: center;}
 /*------*/
 .canvas{height: 100%;min-height: calc(100vh - 108px);}
-.bar{position: absolute; z-index: 999;text-align: center; background:#484848; opacity: 0.6; cursor: pointer;}
+.bar{position: absolute; z-index: 999;text-align: center; background:#484848; opacity: 0.6; cursor: default;}
 .bar h1{text-align: center;}
 .bar-bot{bottom: 0;}
 .rating h4{padding-right: 25px;}
+.f17{font-size: 17px; transition: all .3s ease-in-out; cursor: pointer;transition: all .3s ease-in-out}
+.wrp:hover .f12{margin-left: 10px; opacity: 1; }
+.f12{opacity:0; transition: all .4s ease-in-out;}
+
 
 
 
