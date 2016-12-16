@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 <link rel="stylesheet" href="css/fontawesome/font-awesome.min.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/new.css">
 
 <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js" integrity="sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo=" crossorigin="anonymous"></script>
@@ -14,290 +15,207 @@
 <script src="js/angular/angular.min.js"></script>
 <script src="js/script.js"></script>
 
-<script src="js/fullpage/jquery.easings.min.js"></script>
-<script type="text/javascript" src="js/fullpage/scrolloverflow.min.js"></script>
-<script type="text/javascript" src="js/fullpage/jquery.fullPage.min.js"></script>
 
 </head>
 	<body>
-	<!-- HEADER -->
-		<div class="container-fluid" id="fullpage">
-			<div class="row place_header section fp-auto-height nopadding">
-				<div class="col-md-2 col-xs-2 col-md-offset-1 col-xs-offset-1"><img class="mylogo" src="img/logo.png"></div>
-				<div class="col-md-4 col-xs-4 col-md-offset-1 col-xs-offset-1"><h4>Пати-кафе на Черкизовской</h4></div>
-				<div class="col-md-1 col-xs-1"><h4>до 50 чел</h4></div>
-				<div class="col-md-1 col-xs-1 col-md-offset-1 col-xs-offset-1"><i class="fa fa-star home-filter-star"></i></div>
-				<div class="col-md-1 col-xs-1"><i class="fa fa-bars fa-2" aria-hidden="true"></i></div>
+	<!-- HEADER -->		
+			<div class="col-md-12 col-xs-12 main_menu_wrap nopadding">
+					<ul class="nav nav-bar main_menu col-md-9 col-xs-12 col-md-offset-2 ">
+						<li data-menuanchor="firstPage"><a href="#photo">Фото и Видео</a></li>
+						<li data-menuanchor="secondPage"><a href="#about">Характеристики и цены</a></li>
+						<li data-menuanchor="thirdPage"><a href="#feedback">Описание и отзывы</a></li>
+						<li data-menuanchor="fourthPage"><a href="#fourthPage">Календарь и бронирование</a></li>
+						<li data-menuanchor="fivethPage"><a href="#map">Карта</a></li>
+					</ul>
+				</div>
+	<div class="container-fluid">
+		<div class="row place_header section nopadding">
+			<div class="col-md-2 col-xs-2 col-md-offset-1 col-xs-offset-1"><img class="mylogo" src="img/logo.png"></div>
+			<div class="col-md-4 col-xs-4 col-md-offset-1 col-xs-offset-1"><h4>Пати-кафе на Черкизовской</h4></div>
+			<div class="col-md-1 col-xs-1 col-md-offset-1 col-xs-offset-1"><i class="fa fa-bars fa-2 menu_bar" aria-hidden="true"></i></div>
+		</div>
 	<!-- SLIDER -->
-				<div class="col-md-12 col-xs-12 myslider"></div>
-				<div class="col-md-12 col-xs-12 move bot" id="photoSliderDown">
-					<div class="col-md-1 col-xs-1 col-md-offset-3 col-xs-offset-3"><span class="section-nav-arrow glyphicon glyphicon-triangle-bottom"></span></div>
-					<div class="col-xs-4 col-md-4"><h3>Характеристики и цены</h3></div>
-					<div class="col-md-1 col-xs-1"><span class="section-nav-arrow glyphicon glyphicon-triangle-bottom"></span></div>
-				</div>
-			</div>
+	<div class="row">
+		<div class="col-md-12 col-xs-12" id="photo">
+			<div><img style="width: 100%;height: 500px;" src="img/slider.png"></div>
+		</div>
+	</div>
 	<!-- PRICE -->
-			<div class="row section fp-auto-height nopadding">
-				<div class="col-md-12 col-xs-12 move top" id="priceSliderUp">
-					<div class="col-md-1 col-xs-1 col-md-offset-3 col-xs-offset-3"><span class="section-nav-arrow glyphicon glyphicon-triangle-top"></span></div>
-					<div class="col-xs-4 col-md-4"><h3>Фото и Видео галерея</h3></div>
-					<div class="col-md-1 col-xs-1"><span class="section-nav-arrow glyphicon glyphicon-triangle-top"></span></div>
+		<div class="row about margin">
+			<div class="col-md-8 col-xs-12 col-md-offset-2 ">
+				<div class="col-md-9 col-xs-9"><span class="col-md-6 col-xs-6 place_name nopadding">Пати-кафе, метро Черкизовская</span></div>
+				<div class="col-md-3 col-xs-3 my_face_wrap"><img class="myface" src="img/test_face.jpg"><br><span>Александр</span></div>
+				<div class="col-md-12 col-xs-12"><span style="padding-right: 10px;">Россия, Москва ВАО</span><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i><a href="#feedback"><span>20 отзывов</span></a>
 				</div>
-				<div class="col-md-12 col-xs-12 myprice">
-					<div class="col-md-10 col-xs-10 col-md-offset-1 col-xs-offset-1">
-						<table class="table table-condensed table-hover">
-  							<thead>
-							  <tr>
-							    <th>Тариф</th>
-							    <th>Пн</th>
-							    <th>Вт</th>
-							    <th>Ср</th>
-							    <th>Чт</th>
-							    <th>Пт</th>
-							    <th>Сб</th>
-							    <th>Вс</th>
-							  </tr>
-  							</thead>
-							<tbody class="table-hover">
-							  <tr>
-							    <th scope="row">Лофт</th>
-							    <td>2000₽</td>
-							    <td>2000₽</td>
-							    <td>2000₽</td>
-							    <td>2000₽</td>
-							    <td>2000₽</td>
-							    <td>3000₽</td>
-							    <td>4000₽</td>
-							  </tr>
-							  <tr>
-							    <th scope="row">Банкет</th>
-							    <td>1500/чел</td>
-							    <td>1500/чел</td>
-							    <td>1500/чел</td>
-							    <td>1500/чел</td>
-							    <td>1500/чел</td>
-							    <td>2000/чел</td>
-							    <td>3000/чел</td>
-							  </tr>
-    						</tbody>
-    					</table>
+				<div class="data_react col-md-12 col-xs-12">
+					<hr class="col-md-12 col-xs-12">
+					<div class="col-md-3 col-xs-3 dataicon"><img src="img/icon/construction.png"><br><span class="descript">Город:Москва</span></div>
+					<div class="col-md-3 col-xs-3 dataicon"><img src="img/icon/symbols.png"><br><span class="descript">Метро:Черкизовская</span></div>
+					<div class="col-md-3 col-xs-3 dataicon"><img src="img/icon/computer.png"><br><span class="descript">WiFi:есть</span></div>
+					<div class="col-md-3 col-xs-3 dataicon"><img src="img/icon/people-4.png"><br><span class="descript">Человек:50</span></div>
+					<hr class="data_react col-md-12 col-xs-12">
+					<div class="col-md-1 col-xs-1 col-md-offset-11 col-xs-offset-11"><a href="#about"><span style="font-size: 12px;">Подробнее</span></a></div>
+				</div>
+				<div class="col-md-12 col-xs-12 about_place" id="about">
+					<h2>О площадке</h2>
+					<span class="about_message">Это большой и светлый лофт , расположена в районе станции метро Черкизовская. Здесь Вы сможете великолепно провести свой День Рождения, Вечеринку однокласников или просто встречу со старыми друзьями!</span>
+					<hr class="data_react col-md-12 col-xs-12">
+				</div>
+				<!-- ОСНОВНОЕ -->
+				<div class="col-md-12 col-xs-12">
+					<div class="col-md-3 col-xs-3 nopadding"><h2>Основное</h2></div>
+					<div class="col-md-9 col-xs-9" style="margin-top: 30px;">
+						<div class="row">
+							<div class="col-md-6 col-xs-6">
+								<div><span>Город:</span><span>Москва</span></div>
+								<div><span>Район:</span><span>ВАО</span></div>
+								<div><span>Метро:</span><span>Черкизовская</span></div>
+							</div>
+							<div class="col-md-6 col-xs-6">
+								<div><span>Общая площадь:</span><span>70м</span></div>
+								<div><span>Кол-во человек:</span><span>50</span></div>
+								<div><span>Посадочных мест:</span><span>40</span></div>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-10 col-xs-10 col-xs-offset-1 col-md-offset-1">
-						<ul id="myTab" class="nav nav-tabs">
-							<li class="active"><a href="#panel1">Основные</a></li>
-							<li><a href="#panel2">Опции</a></li>
-							<li><a href="#panel3">Дополнительно</a></li>
-						</ul>
+					<hr class="data_react col-md-9 col-xs-9 col-md-offset-3 col-xs-offset-3">
+				</div>
+				<!-- ДЕТАЛИ -->
+				<div class="col-md-12 col-xs-12">
+					<div class="col-md-3 col-xs-3 nopadding"><h2>Важные детали</h2></div>
+					<div class="col-md-9 col-xs-9" style="margin-top: 30px;">
+						<div class="row">
+							<div class="col-md-6 col-xs-6">
+								<div><span>Страховой депозит:</span><span>3000р</span></div>
+								<div><span>Парковка:</span><span>есть</span></div>
+								<div><span>Ограничение по шуму:</span><span>нет</span></div>
+								<div><span>Посуда:</span><span>барная</span></div>
+								<div><span>Вход:</span><span>по пропускам</span></div>
+							</div>
+							<div class="col-md-6 col-xs-6">
+								<div><span>Гардероб:</span><span>есть</span></div>
+								<div><span>Туалеты:</span><span>М-1 Ж-1</span></div>
+								<div><span>Высота потолков:</span><span>2.5м</span></div>
+								<div><span>Доп. комнаты:</span><span>3</span></div>
+								<div><span>Открытая веранда:</span><span>есть</span></div>
+								<div><span>Детская комната:</span><span>есть</span></div>
+							</div>
+						</div>
 					</div>
-					<div class="tab-content col-md-10 col-xs-10 col-xs-offset-1 col-md-offset-1">
-					  <div id="panel1" class="tab-pane fade in active  col-md-12 col-xs-12">
-					    <h3>Основные характеристики</h3>
-					    <div class="tab-content col-md-6 col-xs-4">
-					    	<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Округ:ВАО</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Метро:Черкизовская</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Тип здания:офисное</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Тип помещения:лофт</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Этаж:9</span></div>
+					<hr class="data_react col-md-9 col-xs-9 col-md-offset-3 col-xs-offset-3">
+				</div>
+				<!-- ОСНАЩЕНИЕ -->
+				<div class="col-md-12 col-xs-12">
+					<div class="col-md-3 col-xs-3 nopadding"><h2>Техническое оснащение</h2></div>
+					<div class="col-md-9 col-xs-9" style="margin-top: 30px;">
+						<div class="row">
+							<div class="col-md-6 col-xs-6">
+								<div><span>Кухня:</span><span>Москва</span></div>
+								<div><span>Барбекю:</span><span>ВАО</span></div>
+								<div><span>Барная стойка:</span><span>Черкизовская</span></div>
+								<div><span>Плазменные панели:</span><span>есть</span></div>
+								<div><span>Видеопроектор:</span><span>есть</span></div>
+								<div><span>WiFi:</span><span>есть</span></div>
+							</div>
+							<div class="col-md-6 col-xs-6">
+								<div><span>Сцена:</span><span>есть</span></div>
+								<div><span>Звуковой об-е:</span><span>есть</span></div>
+								<div><span>Световое об-е:</span><span>есть</span></div>
+								<div><span>Караоке:</span><span>есть</span></div>
+								<div><span>Микроволновая печь:</span><span>есть</span></div>
+								<div><span>Холодильник:</span><span>есть</span></div>
+							</div>
 						</div>
-						<div class="tab-content col-md-6 col-xs-4">
-					    	<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Округ:ВАО</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Метро:Черкизовская</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Тип здания:офисное</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Тип помещения:лофт</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Этаж:9</span></div>
+					</div>
+					<hr class="data_react col-md-9 col-xs-9 col-md-offset-3 col-xs-offset-3">
+				</div>
+				<!-- МЕБЕЛЬ -->
+				<div class="col-md-12 col-xs-12">
+					<div class="col-md-3 col-xs-3 nopadding"><h2>Мебель</h2></div>
+					<div class="col-md-9 col-xs-9" style="margin-top: 30px;">
+						<div class="row">
+							<div class="col-md-6 col-xs-6">
+								<div><span>Столы:</span><span>8</span></div>
+								<div><span>Диваны:</span><span>8</span></div>
+								<div><span>Кресла:</span><span>10</span></div>
+							</div>
+							<div class="col-md-6 col-xs-6">
+								<div><span>Стулья:</span><span>12</span></div>
+								<div><span>Мешки для сидения:</span><span>4</span></div>
+								<div><span>Барные стулья:</span><span>6</span></div>
+							</div>
 						</div>
-						<div class="tab-content col-md-6 col-xs-4">
-					    	<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Округ:ВАО</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Метро:Черкизовская</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Тип здания:офисное</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Тип помещения:лофт</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Этаж:9</span></div>
+					</div>
+					<!-- <hr class="data_react col-md-9 col-xs-9 col-md-offset-3 col-xs-offset-3"> -->
+				</div>
+				<div class="col-md-12 col-xs-12">
+					<div class="col-md-12 col-xs-12 nopadding margin2" id="feedback">
+						<div class="col-md-3 col-xs-3"><h3 class="nopadding nomargin" style="font-weight: 200;">20 отзывов</h3></div>
+						<div class="col-md-9 col-xs-9">
+							<i class="fa fa-star home-filter-star fs25"></i><i class="fa fa-star home-filter-star fs25"></i><i class="fa fa-star home-filter-star fs25"></i><i class="fa fa-star home-filter-star fs25"></i><i class="fa fa-star home-filter-star fs25"></i>
 						</div>
-					  </div>
-					  <div id="panel2" class="tab-pane fade">
-					    <h3>Опции</h3>
-					    <div class="tab-content col-md-4 col-xs-4">
-					    	<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Округ:ВАО</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Метро:Черкизовская</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Тип здания:офисное</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Тип помещения:лофт</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Этаж:9</span></div>
-						</div>
-						<div class="tab-content col-md-4 col-xs-4">
-					    	<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Округ:ВАО</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Метро:Черкизовская</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Тип здания:офисное</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Тип помещения:лофт</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Этаж:9</span></div>
-						</div>
-					  </div>
-					  <div id="panel3" class="tab-pane fade">
-					    <h3>Дополнительные данные</h3>
-					    <div class="tab-content col-md-4 col-xs-4">
-					    	<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Округ:ВАО</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Метро:Черкизовская</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Тип здания:офисное</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Тип помещения:лофт</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Этаж:9</span></div>
-						</div>
-						<div class="tab-content col-md-4 col-xs-4">
-					    	<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Округ:ВАО</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Метро:Черкизовская</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Тип здания:офисное</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Тип помещения:лофт</span></div>
-							<div class="wrp"><span class="glyphicon glyphicon-triangle-right f12"></span><span class="f17">Этаж:9</span></div>
-						</div>
-					  </div>
+					</div>
+					<hr class="data_react col-md-12 col-xs-12">
+					<div class="col-md-6 col-xs-6 margin">
+						<div class="col-md-12"><div class="col-md-6 col-xs-6"><span>Цена/Качество</span></div>
+						<div class="col-md-6 col-xs-6"><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i></div></div>
+						<div class="col-md-12"><div class="col-md-6 col-xs-6"><span>Обслуживание</span></div>
+						<div class="col-md-6 col-xs-6"><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i></div></div>
+					</div>
+					<div class="col-md-6 col-xs-6 margin">
+						<div class="col-md-12"><div class="col-md-6 col-xs-6"><span>Доступность</span></div>
+						<div class="col-md-6 col-xs-6"><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i></div></div>
+						<div class="col-md-12"><div class="col-md-6 col-xs-6"><span>Чистота</span></div>
+						<div class="col-md-6 col-xs-6"><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i><i class="fa fa-star home-filter-star"></i></div></div>
 					</div>
 				</div>
-				<div class="col-md-12 col-xs-12 move bot" id="priceSliderDown">
-					<div class="col-md-1 col-xs-1 col-md-offset-3 col-xs-offset-3"><span class="section-nav-arrow glyphicon glyphicon-triangle-bottom"></span></div>
-					<div class="col-xs-4 col-md-4"><h3>Описания и отзывы</h3></div>
-					<div class="col-md-1 col-xs-1"><span class="section-nav-arrow glyphicon glyphicon-triangle-bottom"></span></div>
+				<!-- FEEDBACK -->
+				<div class="col-md-12 col-xs-12 margin2">
+					<div class="col-md-1 col-xs-1 my_face_wrap"><img class="myface_feedback" src="img/testface2.jpg"></div>
+					<div class=" col-md-11 col-xs-11"><h3>Игорь</h3><br><span>Ноябрь 2016. День рождения</span></div>
+				</div>
+				<div class="col-md-12 col-xs-12 margin">
+					<span class="feedback_message">Великолепное место! Все было по высшему разряду, все ребята остались довольны. День Рождения прошел на "УРА"! В следующий раз обязательно придем сяда же! Очень отзывчивый и вежливый персонал делали все быстро и профессионально. Большое Вам спасибо!</span>
+				</div>
+				<hr class="data_react col-md-12 col-xs-12">
+				<div class="col-md-12 col-xs-12 margin2">
+					<div class="col-md-1 col-xs-1 my_face_wrap"><img class="myface_feedback" src="img/testface3.jpg"></div>
+					<div class=" col-md-11 col-xs-11"><h3>Алена</h3><br><span>Декабрь 2016. Вечеринка</span></div>
+				</div>
+				<div class="col-md-12 col-xs-12 margin">
+					<span class="feedback_message">Большое и просторное место. Все что нужно - есть. Солнечная сторона. Александр отзывчивый и доброжелательный хозяин. Приедем ещё раз!</span>
+				</div>
+				<hr class="data_react col-md-12 col-xs-12">
+							<div class="col-md-12 col-xs-12 margin2">
+					<div class="col-md-1 col-xs-1 my_face_wrap"><img class="myface_feedback" src="img/testface4.jpg"></div>
+					<div class=" col-md-11 col-xs-11"><h3>Сергей</h3><br><span>Декабрь 2016. Банкет</span></div>
+				</div>
+				<div class="col-md-12 col-xs-12 margin">
+					<span class="feedback_message">Просторный светлый лофт, с красивым видом из окон. Фотографии соответствуют действительности, всё чисто, красиво и ухоженно. И самое главное- очень приветливый хозяин. Александр очень приятен в общении, встретил, заселил, все рассказал и подсказал, как провести время в Москве. Однозначно рекомендую-эта квартира станет прекрасным выбором!</span>
+				</div>
+				<hr class="data_react col-md-12 col-xs-12">
+			<!-- MAP -->
+			<div class="col-md-12 col-xs-12">
+				<div class="canvas" id="map"></div>
+				<div class="panel">
+					<div class="row">
+						<div class="col-md-12 col-xs-12"><div style="width: 50px; background-color: #ffaa91; padding: 5px;margin: 0 auto;"><span style="color: #fff;">Район</span></div></div>
+						<div class="col-md-12 col-xs-12" style="text-align: center;"><h2>ВАО</h2></div>
+						<hr class="data_react col-md-9 col-xs-9 col-md-offset-1">
+						<div class="col-md-10 col-xs-9 col-md-offset-1 col-xs-offset-3" style="text-align: center;"><span class="panel_text">При заказе от 8 часов такси до места бесплатно!</span></div>
+						<div class="col-md-12 col-xs-12" style="text-align: center;margin-top: 10px"><button type="button" class="btn btn-success">Подробнее</button></div>
+					</div>
 				</div>
 			</div>
-	<!-- FEEDBACK -->
-			<div class="row section fp-auto-height nopadding">
-				<div class="col-md-12 col-xs-12 move top" id="descSliderUp">
-					<div class="col-md-1 col-xs-1 col-md-offset-3 col-xs-offset-3"><span class="section-nav-arrow glyphicon glyphicon-triangle-top"></span></div>
-					<div class="col-xs-4 col-md-4"><h3>Характеристики и цены</h3></div>
-					<div class="col-md-1 col-xs-1"><span class="section-nav-arrow glyphicon glyphicon-triangle-top"></span></div>
-				</div>
-				<div class="col-md-12 col-xs-12 myfeedback">
-					<div class="col-md-12 col-xs-12">
-						<div class="col-xs-6 col-md-6"><h2>Описание площадки</h2></div>
-						<div class="col-xs-2 col-md-2"><h2>Отзывы</h2></div>
-						<div class="col-xs-4 col-md-4 rating margin">
-							<h4 class="inline">Рейтинг:4.5</h4>
-							<i class="fa fa-star fa-3 home-filter-star"></i>
-							<i class="fa fa-star fa-3 home-filter-star"></i>
-							<i class="fa fa-star fa-3 home-filter-star"></i>
-							<i class="fa fa-star fa-3 home-filter-star"></i>
-							<i class="fa fa-star fa-3 home-filter-star empty-star"></i>
-						</div>	
-					</div>
-					<div class="col-xs-6 col-md-6 description">
-						<div class="col-md-12 col-xs-12"><img class="admlogo" src="img/admin.png"><h4>Администратор: Владимир</h4></div>
-						<div class="col-xs-8 col-md-8 text-description">
-							<h5>
-								voluptatem accusantium doloremque laudantium,
-								totam rem aperiam eaque ipsa, quae ab illo invent
-								ore veritatis et quasi architecto beatae vitae dicta 
-								sunt, explicabo. nemo enim ipsam voluptatem, quia 
-								voluptas sit, aspernatur aut odit aut fugit, sed quia
-								consequuntur magni dolores eos, qui ratione volupt
-								atem sequi nesciunt, neque porro quisquam est, 
-								qui dolorem ipsum, quia dolor sit, amet, consectetu
-								r, adipisci velit, sed quia non numquam eius modi 
-								tempora incidunt, ut labore et dolore magnam aliqu
-								am quaerat voluptatem. ut enim ad minima veniam, 
-								quis nostrum exercitationem ullam corporis suscipit 
-								laboriosam, nisi ut aliquid ex ea commodi consequ
-								atur? quis autem vel eum iure reprehenderit, qui in 
-								ea voluptate velit esse, quam nihil molestiae conse
-								quatur, vel illum, qui dolorem eum fugiat, quo volup
-								am quaerat voluptatem. ut enim ad minima veniam, 
-								quis nostrum exercitationem ullam corporis suscipit 
-								laboriosam, nisi ut aliquid ex ea commodi consequ
-								atur? quis autem vel eum iure reprehenderit, qui in 
-								ea voluptate velit esse, quam nihil molestiae conse
-								quatur, vel illum, qui dolorem eum fugiat, quo volup
-							</h5>
-						</div>
-					</div>
-					<div class="col-xs-6 col-md-6 feedbk"></div>
-				</div>
-				<div class="col-md-12 col-xs-12 move bot" id="descSliderDown">
-					<div class="col-md-1 col-xs-1 col-md-offset-3 col-xs-offset-2"><span class="section-nav-arrow glyphicon glyphicon-triangle-bottom"></span></div>
-					<div class="col-xs-7 col-md-4"><h3>Календарь и бронирование</h3></div>
-					<div class="col-md-1 col-xs-1"><span class="section-nav-arrow glyphicon glyphicon-triangle-bottom"></span></div>
-				</div>
-			</div>
-	<!--  CALENDAR -->
-			<div class="row section fp-auto-height nopadding">
-				<div class="col-md-12 col-xs-12 move" id="calSliderUp">
-					<div class="col-md-1 col-xs-1 col-md-offset-3 col-xs-offset-3"><span class="section-nav-arrow glyphicon glyphicon-triangle-top"></span></div>
-					<div class="col-xs-4 col-md-4"><h3>Описание и отзывы</h3></div>
-					<div class="col-md-1 col-xs-1"><span class="section-nav-arrow glyphicon glyphicon-triangle-top"></span></div>
-				</div>
-				<div class="col-md-12 col-xs-12 mycalendar">
-					<div class="col-md-12 col-xs-12 where"><h1>WHERE IS MY CALENDAR???</h1></div>
-				</div>
-				<div class="col-md-12 col-xs-12 move" id="calSliderDown">
-					<div class="col-md-1 col-xs-1 col-md-offset-3 col-xs-offset-2"><span class="section-nav-arrow glyphicon glyphicon-triangle-bottom"></span></div>
-					<div class="col-xs-7 col-md-4"><h3>Местоположение площадки</h3></div>
-					<div class="col-md-1 col-xs-1"><span class="section-nav-arrow glyphicon glyphicon-triangle-bottom"></span></div>
-				</div>
-			</div>
-	<!-- MAP -->
-			<div class="row section fp-auto-height nopadding">
-				<div class="col-md-12 col-xs-12 move top" id="posSliderUp">
-					<div class="col-md-1 col-xs-1 col-md-offset-3 col-xs-offset-2"><span class="section-nav-arrow glyphicon glyphicon-triangle-top"></span></div>
-					<div class="col-xs-7 col-md-4"><h3>Календарь и бронирование</h3></div>
-					<div class="col-md-1 col-xs-1"><span class="section-nav-arrow glyphicon glyphicon-triangle-top"></span></div>
-				</div>
-				<div class="col-md-12 col-xs-12 mymap nopadding">
-					<div class="col-md-12 col-xs-12 bar"><h1>Москва ВАО. Ближайшее метро - Черкизовская</h1></div>
-					<div class="col-md-12 col-xs-12 canvas nopadding" id="map"></div>
-					<div class="col-md-12 col-xs-12 bar bar-bot">
-						<div class="col-xs-1 col-md-1 col-xs-offset-1"><img class="fire-img inline" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
-						<div class="col-xs-9 col-md-9"><h1 class="inline">При бронировании площадки от 8-и часов такси до места за наш счет</h1></div>
-						<div class="col-xs-1 col-md-1"><img class="fire-img inline" ng-src="img/taxi-active.png" src="img/taxi-active.png"></div>
-					</div>
-				</div>
-				<div class="col-md-12 col-xs-12 move bot" id="firstSlider">
-					<div class="col-md-1 col-xs-1 col-md-offset-3 col-xs-offset-3"><span class="section-nav-arrow glyphicon glyphicon-triangle-top"></span></div>
-					<div class="col-xs-4 col-md-4"><h3>Вернуться в начало</h3></div>
-					<div class="col-md-1 col-xs-1"><span class="section-nav-arrow glyphicon glyphicon-triangle-top"></span></div>
-				</div>
+			<div class="col-md-12 col-xs-12 footer"></div>
 			</div>
 		</div>
+	</div>
+		</div>
+
+		</div>
 	</body>
-<script>
-	$(document).ready(function() {
-		$('#fullpage').fullpage({
-			//anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage']
-		});
-		$('#photoSliderDown').on('click', function(e){
-			console.log(e);
-			e.preventDefault();
-			$.fn.fullpage.moveSectionDown();
-		});
-		$('#priceSliderUp').on('click', function(e){
-			e.preventDefault();
-			$.fn.fullpage.moveSectionUp();
-		});
-		$('#priceSliderDown').on('click', function(e){
-			e.preventDefault();
-			$.fn.fullpage.moveSectionDown();
-		});
-		$('#descSliderUp').on('click', function(e){
-			e.preventDefault();
-			$.fn.fullpage.moveSectionUp();
-		});
-		$('#descSliderDown').on('click', function(e){
-			e.preventDefault();
-			$.fn.fullpage.moveSectionDown();
-		});
-		$('#calSliderUp').on('click', function(e){
-			e.preventDefault();
-			$.fn.fullpage.moveSectionUp();
-		});
-		$('#calSliderDown').on('click', function(e){
-			e.preventDefault();
-			$.fn.fullpage.moveSectionDown();
-		});
-		$('#posSliderUp').on('click', function(e){
-			e.preventDefault();
-			$.fn.fullpage.moveSectionUp();
-		});
-		$('#firstSlider').on('click', function(e){
-			e.preventDefault();
-			$.fn.fullpage.moveTo(1);
-		});
-		
-	});
-</script>
+
 <script type="text/javascript">
 	var map;
 	var myLatLng = {lat: 55.795033, lng: 37.737398};

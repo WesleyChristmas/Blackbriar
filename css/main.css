@@ -61,22 +61,25 @@ span{color:#484848; font-family: 'MuseoSansCyrl'; cursor: default;}
 body{background-color: #f5f5f5;}
 h2,h4,h5{cursor: pointer; color: #484848;}
 .nopadding{padding: 0}
+.nomargin{margin: 0;}
 .margin{margin-top: 20px;}
+.margin2{margin-top: 40px;}
 .inline{display: inline-block;}
 .main-container div{padding: 0!important;}
 .container-fluid{padding: 0;}
 .mylogo{width: 250px;}
 .place_header{padding: 5px; text-align: center;}
-.myslider{background-image: url(../img/slider.png); background-size: cover;    min-height: calc(100vh - 108px);}
+.myslider{background-image: url(../img/slider.png); background-size: cover;min-height: 80%}
 .move{background-color: #333; color: #fff; text-align: center;}
-/*.top{position: absolute; top:0;}*/
+.top{position: absolute; top:0;}
 .bot{position: absolute;bottom: 0;}
-.move span{padding: 18px;}
-.move h3{margin-top: 12px;}
-.myfeedback{min-height: calc(100vh - 108px); position: absolute;bottom: 0}
+.move span{padding: 10px; color: #f5f5f5}
+.move h4{color:#f5f5f5;}
+/*.myfeedback{min-height: calc(100vh - 108px); position: absolute;bottom: 0}*/
 .myprice{padding-bottom: 60px;}
 .myprice table{cursor: pointer; color: #484848;}
 .myprice td{font-size: 20px;}
+.mymap{min-height: 100%;}
 .marker i{padding-right: 10px;}
 .marker p{ display: inline-block;vertical-align: middle;}
 .place_bg {background: url("../img/loft.jpg") no-repeat center center;background-size: cover; }
@@ -87,10 +90,9 @@ h2,h4,h5{cursor: pointer; color: #484848;}
 .optionlogo i{font-size: 48px; color: #333;}
 .option {text-align: left; margin-top: 20px;}
 /*------*/
-.mycalendar {background:url(../img/where.jpg) no-repeat center center; background-size: cover;}
+.mycalendar {background:url(../img/where.jpg) no-repeat center center; background-size: cover;min-height: calc(100% - 80px);}
 .where{margin-top: 500px; text-align: center;}
 /*------*/
-.canvas{height: 100%;min-height: calc(100vh - 108px);}
 .bar{position: absolute; z-index: 999;text-align: center; background:#484848; opacity: 0.6; cursor: default;}
 .bar h1{text-align: center;}
 .bar-bot{bottom: 0;}
@@ -98,6 +100,9 @@ h2,h4,h5{cursor: pointer; color: #484848;}
 .f17{font-size: 17px; transition: all .3s ease-in-out; cursor: pointer;transition: all .3s ease-in-out}
 .wrp:hover .f12{margin-left: 10px; opacity: 1; }
 .f12{opacity:0; transition: all .4s ease-in-out;}
+.fb_message{overflow-y: scroll; max-height: 344px;box-shadow: inset 0px 14px 15px -12px rgba(82,80,82,1);}
+
+
 
 
 
