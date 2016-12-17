@@ -15,6 +15,86 @@
 <script src="js/angular/angular.min.js"></script>
 <script src="js/script.js"></script>
 
+<link rel="stylesheet" id="divaGallery-css"  href="VaSlider/css/gallery.css" type="text/css" media="all" />
+<style type="text/css">
+		.description{position: absolute;
+	  bottom: 0;
+	  opacity: 0;
+	  visibility: hidden;
+	  left: 0;
+	  right: 0;
+	  -webkit-transition: 0.25s;
+	  -o-transition: 0.25s;
+	  transition: 0.25s;
+	  -webkit-transition-delay: 0;
+	  transition-delay: 0;
+	  -webkit-transition-property: all;
+	  -webkit-transition-duration: 0.25s;
+	  -webkit-transition-timing-function: ease-in-out;
+	  transition-property: all;
+	  transition-duration: 0.25s;
+	  transition-timing-function: ease-in-out;
+	  background-color: #fff;
+	  color: #fff;
+	  cursor: pointer;
+	  font: 500 14px 'Raleway';
+	  padding: 20px;
+	  padding-right: 60px;
+	  -webkit-transform: translateY(100%);
+	  -moz-transform: translateY(100%);
+	  -o-transform: translateY(100%);
+	  -ms-transform: translateY(100%);
+	  transform: translateY(100%);}
+
+	.col .image:hover .description {
+	  -webkit-transform: translateY(0);
+	  -moz-transform: translateY(0);
+	  -o-transform: translateY(0);
+	  -ms-transform: translateY(0);
+	  transform: translateY(0);
+	  opacity: 1;
+	  visibility: visible;
+	}
+
+	.col .image .description h3 {
+	  text-transform: uppercase;
+	  color: #313537;
+	  font-size: 14px;
+	  font-weight: 700;
+	  font-family: 'Raleway';
+	  margin-top: 0;
+	  margin-bottom: 5px;
+	  letter-spacing: 0;
+	}
+	.col .image .description p {
+	  margin-bottom: 0;
+	  font-size: 12px;
+	  line-height: 12px;
+	  color: #949595;
+	  font-family: 'Raleway';
+	  font-weight: 400;
+	}
+	.col .image .description .like-photo {
+	  position: absolute;
+	  right: 20px;
+	  top: 20px;
+	  text-align: center;
+	  color: #404041;
+	  font-size: 12px;
+	  font-family: 'Raleway';
+	}
+	.col .image .description .like-photo i {
+	  color: #404041;
+	  font-size: 17px;
+	  margin-bottom: 3px;
+	  display: block;
+	  text-align: center;
+	}
+	.col .image img {
+	  width: 100%;
+
+	</style>
+
 
 </head>
 	<body>
@@ -35,9 +115,59 @@
 			<div class="col-md-1 col-xs-1 col-md-offset-1 col-xs-offset-1"><i class="fa fa-bars fa-2 menu_bar" aria-hidden="true"></i></div>
 		</div>
 	<!-- SLIDER -->
-	<div class="row">
-		<div class="col-md-12 col-xs-12" id="photo">
-			<div><img style="width: 100%;height: 500px;" src="img/slider.png"></div>
+	<div class="row" align="center">
+		<div class="col-md-12 col-xs-12" id="photo" style="height: 500px">
+			<section id="galleryContainer" >
+		<div id="gallery">
+			<button class="exitFull"><i class="fa fa-compress"></i></button>
+			<div id="images-backup" class="hide"></div>
+			<div id="filter">
+				<div class="content">
+					<ul>
+						<li><a href="#">Filter item</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="images"></div>
+			<div class="iss">
+				<i class="fa fa-info-circle open-slide-description-button"></i>
+				<div class="slide-description-open"></div>
+				<div class="slide-description">
+					<a href="#" class="view-project-button">
+						view project                </a>
+					<h2>
+						project name                </h2>
+					<p>
+						client: Kadar Claudiu / &copy; Alin                </p>
+					<nav class="social-icons">
+						<ul>
+							<li>
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-pinterest"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="carousel-back"></div>
+			</div>
+		</div>
+	</section>
 		</div>
 	</div>
 	<!-- PRICE -->
@@ -216,6 +346,10 @@
 		</div>
 	</body>
 
+<script type='text/javascript' src='VaSlider/js/jquery.iosslider.min.js'></script>
+<script type='text/javascript' src='VaSlider/js/iscroll.js'></script>
+<script type='text/javascript' src='VaSlider/js/gallery.js'></script>
+	
 <script type="text/javascript">
 	var map;
 	var myLatLng = {lat: 55.795033, lng: 37.737398};

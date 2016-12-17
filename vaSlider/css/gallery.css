@@ -1,0 +1,98 @@
+/* 
+* @Author: Neacsu
+* @Date:   2014-08-13 13:26:46
+* @Last Modified by:   Neacsu
+* @Last Modified time: 2014-09-18 16:54:31
+*/
+html{ -webkit-user-select:none; -webkit-text-size-adjust:none; height: 100%!important;  background-position: center;}
+body{ margin: 0; padding: 0; height: 100%; position: relative; background: #ffffff!important; transition: opacity 1s; -webkit-transition: opacity 1s; -moz-transition: opacity 1s; -o-transition: opacity 1s;}
+#images, #images-backup, .filterSort{ display: none;}
+
+#galleryContainer{ height: 100%; position: relative; top: 0; left: 0; right: 0; bottom: 0; padding: 0; overflow: hidden; opacity: 0;}
+#galleryContainer.begin{ z-index: 123; position: fixed; padding: 0; }
+#galleryContainer.mobile{ height: 100%!important;}
+
+.transparent-welcome{ opacity: 0;}
+
+#gallery{ width: 60%; height: 60%; background: #fff; position: relative;}
+#gallery .col{ float: left; padding: 0; height: 100%; position: relative; z-index: 1; opacity: 0; overflow: hidden; transition: all 0.5s; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s;}
+#gallery .col.col-type-1{ width: 100%;}
+#gallery .col.col-type-2{ width: 50%;}
+#gallery .col.col-type-3{ width: 33.3333%;}
+#gallery .col.col-type-4{ width: 25%;}
+#gallery .col.col-type-5{ width: 20%;}
+#gallery .col:after{ display: table; content: ""; clear: both;}
+
+#gallery .col .images_wrapper{ position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%;}
+#gallery .col .images{ width: 100%; position: absolute; } 
+#gallery .col .image{ margin: 0; position: absolute; width: 100%; top: 0; left: 0; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0);}
+#gallery .col .image:after{ display: table; content: ""; clear: both;}
+#gallery .col .image img{ width: 100%; margin: 0; float: left; }
+#gallery .col .image .description{ max-height: 100%;}
+#gallery .controls{ position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
+#gallery .up, #gallery .down{ position: absolute; top: 0; left: 0; right: 0; height: 150px;  z-index: 99;}
+#gallery .down{ bottom: 0; top: initial;} 
+#gallery .exitFull{ position: absolute; display: none; background: transparent; border: none; color: #ffffff; top: 0px; right: 0; font-size: 22px; padding: 10px; width: 45px; height: 45px; z-index: 110;}
+#gallery .exitFull:hover{ background: #000000;}
+
+.iosslider { position: absolute!important; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; background-color: transparent; width: 100%!important; height: 100%!important; opacity: 0; z-index: 10; -webkit-transition: .5s; transition: .5s; -webkit-transition: opacity .5s ease-in; transition: opacity .5s ease-in;}
+.iosslider .slider { width: 100%; height: 100%; }
+.iosslider > i:not(.fa) {display: none;}
+.iosslider .slider .slide { float: left; text-align: center; width: 100%; height: 100%; opacity: 0; -webkit-transition: .5s; transition: .5s; -webkit-transition: opacity .5s ease-in; transition: opacity .5s ease-in;}
+.iosslider .slider .slide.active{ opacity: 1; }
+.iosslider .slider .slide .photo{ max-width: inherit; background-size: cover; display: block; margin: 0 auto;}
+
+.iosslider button{ cursor: pointer; font-size: 60px; color: #ffffff; opacity: .4; background-color: transparent; border: none; top: 50%; margin-top: -31px; position: absolute;}
+.iosslider button:hover{ opacity: 1;}
+.iosslider button:focus{ outline: none;}
+.iosslider button.prev{ left: 20px;}
+.iosslider button.next{ right: 20px;}
+.iosslider button.next, .iosslider button.prev{ width: 30px; padding:0; text-align: center;}
+
+.iosslider button.prev.small{ left: 3px; }
+.iosslider button.next.small{ right: 3px;}
+
+.iosslider button.next.iphone, .iosslider button.prev.iphone{ width: 20px; font-size: 40px;}
+.iosslider button.prev.iphone{ left: 0px; }
+.iosslider button.next.iphone{ right: 0px;}
+
+.iosslider button.exitSlider{ display: none; position: absolute; top: 31px; right: 45px; font-size: 22px; padding: 10px; width: 45px; height: 45px; opacity: 1;}
+.iosslider button.exitSlider:hover, .iosslider button.exitFull:hover{ background-color: #000000;}
+
+.slider-start-clone{ position: fixed; background-size: cover; -webkit-transition: 0.35s; transition: 0.35s; -webkit-transition: all 0.35s ease-in-out; transition: all 0.35s ease-in-out;}
+
+.iss{ width:100%; height: 100%; position: absolute; top: 0; left: 0; bottom: 0; right: 0; opacity: 0; z-index: -1; -webkit-transition: 0.35s; transition: 0.35s; -webkit-transition: opacity 0.35s ease-in-out; transition: opacity 0.35s ease-in-out;}
+.iss .carousel-back{ position: absolute; width: 100%; background: rgba(0,0,0,.8); bottom: 0; left: 0; opacity: 0; z-index: 0; top: 0; -webkit-transition: 0.5s; transition: 0.5s; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
+.iss .carousel-back.opened{ opacity: 1;}
+.iss .slide-description-open{ position: absolute; bottom: 0; left: 0; right: 0; height: 20px; z-index: 100;}
+
+#filter { color: #ffffff; position: absolute; left: 0; right: 0; top: 0; bottom: 0; background: rgba(0, 0, 0, 0.8); z-index: 101; font-family: Helvetica; display: none; }
+
+header.header.landscape .logo, header.header.landscape .breadcrumb-secondary{ display: none;}
+
+@media (max-width: 780px) {
+
+#galleryContainer{ 
+	height: -webkit-calc(100% - 83px);
+ 	height: calc(100% - 83px); 
+}
+.welcome .overlay .content p {
+	max-width: inherit;
+}
+
+}
+
+	.iosslider .slider .slide .photo.landscape{
+		width: 100%; 
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.iosslider .slider .slide .photo.portrait{
+		height: 100%;
+		
+	}
+
