@@ -16,95 +16,17 @@
 <script src="js/script.js"></script>
 
 <link rel="stylesheet" id="divaGallery-css"  href="VaSlider/css/gallery.css" type="text/css" media="all" />
-<style type="text/css">
-		.description{position: absolute;
-	  bottom: 0;
-	  opacity: 0;
-	  visibility: hidden;
-	  left: 0;
-	  right: 0;
-	  -webkit-transition: 0.25s;
-	  -o-transition: 0.25s;
-	  transition: 0.25s;
-	  -webkit-transition-delay: 0;
-	  transition-delay: 0;
-	  -webkit-transition-property: all;
-	  -webkit-transition-duration: 0.25s;
-	  -webkit-transition-timing-function: ease-in-out;
-	  transition-property: all;
-	  transition-duration: 0.25s;
-	  transition-timing-function: ease-in-out;
-	  background-color: #fff;
-	  color: #fff;
-	  cursor: pointer;
-	  font: 500 14px 'Raleway';
-	  padding: 20px;
-	  padding-right: 60px;
-	  -webkit-transform: translateY(100%);
-	  -moz-transform: translateY(100%);
-	  -o-transform: translateY(100%);
-	  -ms-transform: translateY(100%);
-	  transform: translateY(100%);}
-
-	.col .image:hover .description {
-	  -webkit-transform: translateY(0);
-	  -moz-transform: translateY(0);
-	  -o-transform: translateY(0);
-	  -ms-transform: translateY(0);
-	  transform: translateY(0);
-	  opacity: 1;
-	  visibility: visible;
-	}
-
-	.col .image .description h3 {
-	  text-transform: uppercase;
-	  color: #313537;
-	  font-size: 14px;
-	  font-weight: 700;
-	  font-family: 'Raleway';
-	  margin-top: 0;
-	  margin-bottom: 5px;
-	  letter-spacing: 0;
-	}
-	.col .image .description p {
-	  margin-bottom: 0;
-	  font-size: 12px;
-	  line-height: 12px;
-	  color: #949595;
-	  font-family: 'Raleway';
-	  font-weight: 400;
-	}
-	.col .image .description .like-photo {
-	  position: absolute;
-	  right: 20px;
-	  top: 20px;
-	  text-align: center;
-	  color: #404041;
-	  font-size: 12px;
-	  font-family: 'Raleway';
-	}
-	.col .image .description .like-photo i {
-	  color: #404041;
-	  font-size: 17px;
-	  margin-bottom: 3px;
-	  display: block;
-	  text-align: center;
-	}
-	.col .image img {
-	  width: 100%;
-
-	</style>
 
 
 </head>
 	<body>
 	<!-- HEADER -->		
-			<div class="col-md-12 col-xs-12 main_menu_wrap nopadding">
+			<div class="col-md-12 col-xs-12 main_menu_wrap nopadding" id="toppanel">
 					<ul class="nav nav-bar main_menu col-md-9 col-xs-12 col-md-offset-2 ">
 						<li data-menuanchor="firstPage"><a href="#photo">Фото и Видео</a></li>
 						<li data-menuanchor="secondPage"><a href="#about">Характеристики и цены</a></li>
 						<li data-menuanchor="thirdPage"><a href="#feedback">Описание и отзывы</a></li>
-						<li data-menuanchor="fourthPage"><a href="#fourthPage">Календарь и бронирование</a></li>
+						<li data-menuanchor="fourthPage"><a href="#order">Календарь и бронирование</a></li>
 						<li data-menuanchor="fivethPage"><a href="#map">Карта</a></li>
 					</ul>
 				</div>
@@ -324,8 +246,85 @@
 					<span class="feedback_message">Просторный светлый лофт, с красивым видом из окон. Фотографии соответствуют действительности, всё чисто, красиво и ухоженно. И самое главное- очень приветливый хозяин. Александр очень приятен в общении, встретил, заселил, все рассказал и подсказал, как провести время в Москве. Однозначно рекомендую-эта квартира станет прекрасным выбором!</span>
 				</div>
 				<hr class="data_react col-md-12 col-xs-12">
+			<!-- ORDER -->
+			<div class="col-md-12 col-xs-12 margin2" style="text-align: center;" id="order">
+				<a href="#openModal"><button type="button" class="btn btn-success order_btn">Выбрать дату бронирования</button></a>
+				<div id="openModal" class="modalDialog">
+					<a href="#close" title="Закрыть" class="close">X</a>
+					<div class="row">
+						<div class="col-md-10 col-xs-10 col-xs-offset-1 col-md-offset-1">
+							<div class="col-md-12 col-xs-12 margin">
+								<div class="col-md-2 col-xs-1 nopadding">
+									<button type="button" class="btn btn-primary btn-sm">Prev</button>
+									<button type="button" class="btn btn-primary btn-sm">Next</button>
+								</div>
+							<div class="col-md-8 col-xs-8"><h3 style="text-align: center; color: #484848">Декабрь</h3></div>
+							</div>
+						<div class="col-md-12 col-xs-12">
+							<table class="table table-bordered mdate">
+    							<thead>
+     								<tr>
+  					      				<th>Пн</th>
+  					      				<th>Вт</th>
+  					      				<th>Ср</th>
+  					      				<th>Чт</th>
+  					      				<th>Пт</th>
+  					      				<th>Сб</th>
+  					      				<th>Вс</th>
+  					    			</tr>
+  					  			</thead>
+  					  		<tbody>
+  					    	<tr>
+  					      		<td><span>1</span></td>
+  					      		<td><span>2</span></td>
+  					      		<td><span>3</span></td>
+  					      		<td><span>4</span></td>
+  					      		<td><span>5</span></td>
+  					      		<td><span>6</span></td>
+  					      		<td><span>7</span></td>
+  					    	</tr>
+  					    	<tr>
+  					      		<td><span>8</span></td>
+  					      		<td><span>9</span></td>
+  					      		<td><span>10</span></td>
+  					      		<td><span>11</span></td>
+  					      		<td><span>12</span></td>
+  					      		<td><span>13</span></td>
+  					      		<td><span>14</span></td>
+  					    	</tr>
+  					    	<tr>
+  					      		<td><span>15</span></td>
+  					      		<td><span>16</span></td>
+  					      		<td><span>17</span></td>
+  					      		<td><span>18</span></td>
+  					      		<td><span>19</span></td>
+  					      		<td><span>20</span></td>
+  					      		<td><span>21</span></td>
+  					    	</tr>
+  					    	<tr>
+  					      		<td><span>22</span></td>
+  					      		<td><span>23</span></td>
+  					      		<td><span>24</span></td>
+  					      		<td><span>25</span></td>
+  					      		<td><span>26</span></td>
+  					      		<td><span>27</span></td>
+  					      		<td><span>28</span></td>
+  					    	</tr>
+  					    	<tr>
+  					      		<td><span>29</span></td>
+  					      		<td><span>30</span></td>
+  					      		<td><span>31</span></td>
+  					    	</tr>
+  					  	</tbody>
+  					</table>
+				</div>
+			</div>
+		</div>
+				</div>
+
+			</div>
 			<!-- MAP -->
-			<div class="col-md-12 col-xs-12">
+			<div class="col-md-12 col-xs-12 margin2">
 				<div class="canvas" id="map"></div>
 				<div class="panel">
 					<div class="row">

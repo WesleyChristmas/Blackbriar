@@ -14,7 +14,7 @@ body{ margin: 0; padding: 0; height: 100%; position: relative; background: #ffff
 
 .transparent-welcome{ opacity: 0;}
 
-#gallery{ width: 60%; height: 60%; background: #fff; position: relative;}
+#gallery{ width: 95%; height: 100%; background: #fff; position: relative;}
 #gallery .col{ float: left; padding: 0; height: 100%; position: relative; z-index: 1; opacity: 0; overflow: hidden; transition: all 0.5s; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s;}
 #gallery .col.col-type-1{ width: 100%;}
 #gallery .col.col-type-2{ width: 50%;}
