@@ -67,7 +67,7 @@ h2,h4,h5{cursor: pointer; color: #484848;}
 .inline{display: inline-block;}
 .main-container div{padding: 0!important;}
 .container-fluid{padding: 0;}
-.mylogo{width: 250px;}
+.mylogo{width: 170px;padding-top: 7px;}
 .place_header{padding: 5px; text-align: center;}
 .myslider{background-image: url(../img/slider.png); background-size: cover;min-height: 80%}
 .move{background-color: #333; color: #fff; text-align: center;}
