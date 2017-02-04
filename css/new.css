@@ -67,7 +67,11 @@ i{color: #008489!important;; font-size: 13px!important;}
 .setting_menu>li>a{color:#484848;}
 .mylabel{font-size: 18px;font-weight: 300;float: left;width: 145px;}
 .myface-big{width: 110px; height: 110px;}
+.width100{width: 100%!important;}
 
+/* NG-SWITCH ANIMATE */
+.show-hide { -webkit-transition: 0.5s linear all; transition: 0.5s linear all; }
+.show-hide-active { font-weight: bold; }
 
 /*EDIT CSS*/
 .center{text-align: center;}
